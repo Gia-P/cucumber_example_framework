@@ -1,5 +1,4 @@
 @web @regression @name
-  # Created by Gia Pachkhatashvili
 Feature: Name feature
 
   Background:

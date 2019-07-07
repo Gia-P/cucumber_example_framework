@@ -52,8 +52,8 @@ public class AppiumWrapper {
             appiumDriver = new IOSDriver(new URL(appiumServerURL), capabilities);
         } else if (platformName.equals("android")) {
             //Keeping this here for now incase if we need to use it some point
-            capabilities.setCapability("appActivity", "com.applause.automation.ionicconference.MainActivity");
-            capabilities.setCapability("appPackage", "com.applause.automation.ionicconference");
+            capabilities.setCapability("appActivity", "org.jw.jwlibrary.mobile.MainActivity");
+            capabilities.setCapability("appPackage", "org.jw.jwlibrary.mobile");
             appiumDriver = new AndroidDriver(new URL(appiumServerURL), capabilities);
         } else {
             throw new UnsupportedOperationException("Invalid Platform Name" + platformName);
